@@ -1,0 +1,53 @@
+/* Formulario de la pagina Contacto */
+.card__email{
+    padding: map-get($estilos-contacto ,espaciado-interno);
+    width: 200px;
+    margin:map-get($estilos-contacto ,margenes);
+    border: map-get($estilos-contacto ,bordes);
+    border-radius: map-get($estilos-contacto ,redondeo);
+}
+.card__nombres{
+    padding: map-get($estilos-contacto ,espaciado-interno);
+    width: 200px;
+    margin:map-get($estilos-contacto ,margenes);
+    border: map-get($estilos-contacto ,bordes);
+    border-radius: map-get($estilos-contacto ,redondeo);
+}
+.card__number{
+    padding: map-get($estilos-contacto ,espaciado-interno);
+    width: 150px;
+    margin:map-get($estilos-contacto ,margenes);
+    border: map-get($estilos-contacto ,bordes);
+    border-radius: map-get($estilos-contacto ,redondeo);
+}
+.card__mensaje{
+    padding: map-get($estilos-contacto ,espaciado-interno);
+    height: 150px;
+    margin:map-get($estilos-contacto ,margenes);
+    border: map-get($estilos-contacto ,bordes);
+    border-radius: map-get($estilos-contacto ,redondeo);
+}
+
+.form__section{
+    @extend .main__section;
+    background-color: $color-general;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+    box-shadow:$sombras;
+}
+
+.button__submit{
+    font-size: 17px;
+    border:thin;
+    border-radius: 10px;
+    padding:3px 20px;
+    margin:10px;
+    background:$color-boton-compra;
+    color: $color-blanco;
+    transition: .3s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.10);
+        }
+}
